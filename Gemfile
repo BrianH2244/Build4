@@ -14,7 +14,7 @@ gem 'sdoc',           '0.4.0', group: :doc
 gem 'pg',             '0.17.1'
 
 group :development, :test do
-#  gem 'sqlite3',     '1.3.9'
+  gem 'sqlite3',     '1.3.9'
   gem 'byebug',      '3.4.0'
   gem 'web-console', '2.0.0.beta3'
   gem 'spring',      '1.1.3'
