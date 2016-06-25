@@ -1,0 +1,11 @@
+<li id="task-<%= task.id %>">
+  <%= link_to gravatar_for(task.user, size: 50), task.user %>
+  <span class="importantTasks"><%= task.importantTasks %></span>
+  <span class="timestamp">
+    Posted <%= time_ago_in_words(task.created_at) %> ago.
+    <% if current_user?(task.user) %>
+      <%= link_to "delete", task, method: :delete,
+                                  data: { confirm: "You sure?" } %>
+    <% end %>
+  </span>
+</li>

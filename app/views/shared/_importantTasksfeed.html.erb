@@ -1,0 +1,6 @@
+<% if @taskFeed_items.try(:any?) %>
+  <ol class="tasks">
+    <%= render @taskFeed_items %>
+  </ol>
+  <%= will_paginate @taskFeed_items %>
+<% end %>
